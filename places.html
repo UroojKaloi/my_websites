@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindh tour places</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .banner-container:hover {
+            opacity: 0.8;
+        }
+
+        .link {
+            position: absolute;
+            bottom: 20px;
+            right: 10%;
+            display: flex;
+            gap: 15px;
+        }
+        .link a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+
+        .contact-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-icon img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        
+        footer {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+            padding: 5px;
+        }
+
+        .heading {
+            background-color: brown;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 2px solid brown;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td a img {
+            width: 100%;
+            height: auto;
+            max-width: 300px;
+            display: block;
+            margin: auto;
+        }
+
+        @media (max-width: 768px) {
+
+            .link {
+                flex-direction:row;
+                right: 5%;
+            }
+
+            table {
+                width: 90%;
+            }
+
+            td {
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-container">
+        <img src="Banner.png" alt="banner">
+        <div class="link">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="booking.html">Booking</a>
+            <a href="places.html">Places</a>
+        </div>
+    </div>
+
+    <h1 class="heading">Places To Visit With Us</h1>
+    <table>
+        <tr>
+            <td><a href="place1.html"><img src="b1.jpg" alt="place 1"></a></td>
+            <td><a href="place2.html"><img src="cho2.jpg" alt="place 2"></a></td>
+            <td><a href="place3.html"><img src="kee1.jpg" alt="place 3"></a></td>
+        </tr>
+        <tr>
+            <td><a href="place4.html"><img src="bad1.jpg" alt="place 4"></a></td>
+            <td><a href="place5.html"><img src="k1.jpg" alt="place 5"></a></td>
+            <td><a href="place6.html"><img src="as1.jpg" alt="place 6"></a></td>
+        </tr>
+    </table>
+    <a href="contact-us.html" class="contact-icon">
+        <img src="ci.png" alt="Contact Us">
+    </a>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="booking.html">Booking</a>
+            <a href="places.html">Places</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="policies.html">Policies</a>
+        </nav>
+        <p>&copy; 2025 Thatta Tour. All Rights Reserved.</p>
+        <p>Contact us at <a href="mailto:info@thattatour.com" style="color: lightblue;">info@thattatour.com</a> | 📞 +92 xxx xxxxxxx</p>
+    </footer>
+</body>
+</html>

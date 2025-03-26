@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sindh tour places</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .banner-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .banner-container:hover {
+            opacity: 0.8;
+        }
+
+        .link {
+            position: absolute;
+            bottom: 20px;
+            right: 10%;
+            display: flex;
+            gap: 15px;
+        }
+        .link a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+         /* Gallery Styling */
+         .gallery {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slides {
+            display: flex;
+            width: 300%; /* Adjusted for 3 images */
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slides img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+        }
+
+        /* Navigation Dots */
+        .navigation {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        .navigation label {
+            width: 15px;
+            height: 15px;
+            margin: 5px;
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        input[type="radio"] {
+            display: none;
+        }
+
+        input:nth-of-type(1):checked ~ .slides { transform: translateX(0); }
+        input:nth-of-type(2):checked ~ .slides { transform: translateX(-33.33%); }
+        input:nth-of-type(3):checked ~ .slides { transform: translateX(-66.66%); }
+        
+        input:checked + label {
+            background-color: #333;
+        }
+
+        .contact-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-icon img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        
+        footer {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            display: inline-block;
+            padding: 5px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="banner-container">
+            <img src="Banner.png" alt="banner">
+            <div class="link">
+                <a href="index.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="booking.html">Booking</a>
+                <a href="places.html">Places</a>
+            </div>
+        </div>
+        <a href="contact-us.html" class="contact-icon">
+            <img src="ci.png" alt="Contact Us">
+        </a> 
+        <h1 style="background-color: brown;color: aliceblue;text-align: center;">Bhambhore</h1>   
+        <div class="section">
+            <h2 style="color: brown;">History of Bhambhore</h2>
+            <p>Bhambhore is an ancient city dating back to the 1st century BC, located in Sindh, Pakistan. It is believed to be the legendary city of Debal where Muhammad bin Qasim entered Sindh in 711 AD. The ruins showcase a blend of Buddhist, Hindu, and early Islamic architecture, making it a significant archaeological site.</p>
+        </div>
+        <div class="section">
+            <h2 style="color: brown;">Activities to Do in Bhambhore</h2>
+            <ul>
+                <li>Explore the archaeological ruins and ancient structures.</li>
+                <li>Visit the Bhambhore Museum to see artifacts and historical exhibits.</li>
+                <li>Enjoy a scenic walk along the Indus River.</li>
+                <li>Learn about the legendary love story of Sassui and Punnhun.</li>
+                <li>Capture stunning photography of the historical sites.</li>
+            </ul>
+        </div>
+        <div class="section">
+            <div class="gallery">
+                <input type="radio" name="radio" id="img1" checked>
+                <input type="radio" name="radio" id="img2">
+                <input type="radio" name="radio" id="img3">
+          
+                <div class="slides">
+                    <img src="b1.jpg" alt="Image 1">
+                    <img src="b2.jpg" alt="Image 2">
+                    <img src="b3.jpg" alt="Image 3">
+                </div>
+                <div class="navigation">
+                    <label for="img1"></label>
+                    <label for="img2"></label>
+                    <label for="img3"></label>
+                </div>
+            </div>
+         <!-- Footer -->
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="booking.html">Booking</a>
+            <a href="places.html">Places</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="policies.html">Policies</a>
+        </nav>
+        <p>&copy; 2025 Thatta Tour. All Rights Reserved.</p>
+        <p>Contact us at <a href="mailto:info@thattatour.com" style="color: lightblue;">info@thattatour.com</a> | 📞 +92 xxx xxxxxxx</p>
+    </footer>
+</body>
+</html>

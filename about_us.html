@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Banner Section */
+        .banner-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .banner-container img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .banner-container:hover {
+            opacity: 0.8;
+        }
+
+        /* Navigation Links on Banner */
+        
+
+        /* Responsive Navbar */
+        .link {
+            position: absolute;
+            bottom: 20px;
+            right: 10%;
+            display: flex;
+            gap: 15px;
+        }
+        .link a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            
+            padding: 8px 12px;
+            border-radius: 5px;
+        }
+       
+
+       
+
+        /* Contact Icon */
+        .contact-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contact-icon img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        /* Sections */
+        
+
+        
+        .h {
+            color: brown;
+        }
+
+        /* Footer */
+        footer {
+            background-color: brown;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        footer p {
+            margin-top: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .banner-container img {
+                height: 250px;
+            }
+            .nav-links {
+                flex-direction:row;
+                right: 5%;
+            }
+
+            
+            .contact-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .contact-icon img {
+                width: 30px;
+                height: 30px;
+            }
+
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="banner-container">
+        <img src="Banner.png" alt="banner">
+        <div class="link">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="booking.html">Booking</a>
+            <a href="places.html">Places</a>
+        </div>
+    </div>
+
+    <a href="contact-us.html" class="contact-icon">
+        <img src="ci.png" alt="Contact Us">
+    </a>
+
+    <section>
+        <h1 style="background-color: brown;color: aliceblue;text-align: center;">Discover Thatta with Us</h1>
+        <p>Welcome to <strong>[Your Website Name]</strong>, your trusted guide to exploring the historical and cultural wonders of Thatta.</p>
+    </section>
+    
+    <section>
+        <h2 class="h">Who We Are</h2>
+        <p>We are a team of travel enthusiasts, historians, and locals who love Thatta and want to share its magic with the world.</p>
+    </section>
+    
+    <section>
+        <h2 class="h">What We Offer</h2>
+        <ul>
+            <li><strong class="h">Guided Tours:</strong> Explore Thatta’s ancient monuments.</li>
+            <li><strong class="h">Cultural Experiences:</strong> Immerse yourself in local traditions.</li>
+            <li><strong class="h">Custom Tours:</strong> Personalized itineraries.</li>
+            <li><strong class="h">Photography Tours:</strong> Capture stunning views.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2 class="h">Why Choose Us?</h2>
+        <ul>
+            <li><strong class="h">Local Expertise:</strong> Our guides are locals.</li>
+            <li><strong class="h">Authentic Experiences:</strong> We bring history to life!</li>
+            <li><strong class="h">Hassle-Free Travel:</strong> We take care of everything.</li>
+            <li><strong class="h">Customer Satisfaction:</strong> Your comfort is our priority.</li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2 class="h">Join Us on an Unforgettable Journey!</h2>
+        <p>Discover Thatta’s hidden gems and create unforgettable memories.</p>
+        <p><strong class="h">📞 Contact Us:</strong> [Your Contact Information]</p>
+        <p><strong class="h">🌐 Visit Our Website:</strong> [Your Website URL]</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="booking.html">Booking</a>
+            <a href="places.html">Places</a>
+            <a href="contact-us.html">Contact Us</a>
+            <a href="policies.html">Policies</a>
+        </nav>
+        <p>&copy; 2025 Thatta Tour. All Rights Reserved.</p>
+        <p>Contact us at <a href="mailto:info@thattatour.com" style="color: lightblue;">info@thattatour.com</a> | 📞 +92 xxx xxxxxxx</p>
+    </footer>
+</body>
+</html>
